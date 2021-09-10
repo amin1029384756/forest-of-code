@@ -1,0 +1,38 @@
+{
+  "name": "Serpantlang",
+  "version": "0.0.1",
+  "description": "SerpantLang.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "gen-parser": "nearleyc serpant.ne -o Serpant.js",
+    "gen-small-parser": "nearleyc small.ne -o .js",
+    "parse": "node Parser.js Main.serpant"
+  },
+  "dependencies": {
+    "fastify": "^3.14.1",
+    "fastify-formbody": "^5.0.0",
+    "fastify-static": "^4.0.0",
+    "handlebars": "^4.7.7",
+    "point-of-view": "^4.14.0",
+    "nearley": "^2.20.1",
+    "moo": "^0.5.1",
+    "fs": "^0.0.2",
+    "safe-read-write": "^1.0.5",
+    "@zemnmez/nearley": "^2.23.0"
+  },
+  "engines": {
+    "node": "12.x"
+  },
+  "repository": {
+    "url": "https://glitch.com/edit/#!/glitch-hello-node"
+  },
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "glitch",
+    "express"
+  ],
+  "devDependencies": {},
+  "author": ""
+}
